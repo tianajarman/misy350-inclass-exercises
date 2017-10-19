@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JS Function Exercises</title>
+  </head>
+  <body>
+    <h1>JS Functions - see console for output</h1>
+
+    <script>
+
+    // this syntax only works when there is one parameter and one return line
+    const get_square = a => a * a;
+
+
+    console.log(get_square(9));
+
+    const get_letter_grade = (grade) => {
+      let letter_grade;
+
+        if (grade>=90){
+          letter_grade = "A";
+        } else if (grade>=80){
+          letter_grade = "B";
+        } else {
+          letter_grade = "C";
+        }
+
+        return letter_grade;
+    }
+
+    console.log(get_letter_grade(98));
+
+    </script>
+  </body>
+</html>
