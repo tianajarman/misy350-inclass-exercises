@@ -13,15 +13,32 @@
   <a class="my-link" href="http://www.facebook.com">website 3</a>
   <a class="my-link" href="http://www.facebook.com">website 4</a>
 
-  <script>
-    document.getElementById('google').innerHTML = "Google"; // changing the title of website 2 to Google (selecting things by id)
-    let links = document.getElementsByClassName('my-link'); // storing into an array to manipulate later
-    links[0].innerHTML = "Twitter"; // changing website 3 to Twitter
-    links[0].href = "http://www.twitter.com"; // changing website 3's link to twitter.com
-    links[1].innerHTML = "LinkedIn";
-    links[1].href = "http://linkedin.com";
-    links[1].style.color = "red"; // changing style of hyperlink to the color red
-  </script>
+
+  <h1>DOM is cool!</h1>
+  <button id="heading-button" type="button">change to red</button>
+  <button id="toggle-button" type="button">Toggle Links</button>
+
+<div id="main-text">
+
+  <h1>HTML and CSS</h1>
+  <button class="project-button" type="button">Recent Projects</button>
+  <ul class="projects">
+    <li>HTML for Newark</li>
+    <li>CSS for MISY350</li>
+  </ul>
+
+  <h1>JavaScript</h1>
+  <button class="project-button" type="button">Recent Projects</button>
+  <ul class="projects">
+    <li>JS for NYC</li>
+    <li>JQuery for MISY350</li>
+  </ul>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script> <!-- most up-to-date jquery cdn -->
+
+<script src="jquery-basics.js"></script> <!-- importing jquery file -->
 </body>
 
 </html>
