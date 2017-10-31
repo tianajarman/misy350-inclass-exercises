@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>jQuery Exercise</title>
+</head>
+
+<body>
+
+  <a href="http://www.facebook.com">website 1</a>
+  <a id="google" href="http://www.facebook.com">website 2</a>
+  <a class="my-link" href="http://www.facebook.com">website 3</a>
+  <a class="my-link" href="http://www.facebook.com">website 4</a>
+
+  <script>
+    document.getElementById('google').innerHTML = "Google"; // changing the title of website 2 to Google (selecting things by id)
+    let links = document.getElementsByClassName('my-link'); // storing into an array to manipulate later
+    links[0].innerHTML = "Twitter"; // changing website 3 to Twitter
+    links[0].href = "http://www.twitter.com"; // changing website 3's link to twitter.com
+    links[1].innerHTML = "LinkedIn";
+    links[1].href = "http://linkedin.com";
+    links[1].style.color = "red"; // changing style of hyperlink to the color red
+  </script>
+</body>
+
+</html>
